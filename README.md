@@ -1,55 +1,35 @@
-# My Python App
+# BoardGameGeek Collection Viewer
 
-This is a Python project that contains an application and its associated tests.
+This Python project is a web application that allows users to view their BoardGameGeek collection in a visually appealing format. It uses Flask for the backend and renders the collection using HTML templates.
 
-## Project Structure
+## Features
 
-The project has the following structure:
-
-```
-my-python-app
-├── src
-│   └── main.py
-├── tests
-│   └── test_main.py
-├── requirements.txt
-└── README.md
-```
-
-## Files
-
-- `src/main.py`: This file is the entry point of the application. It contains the main code for your Python application.
-- `tests/test_main.py`: This file contains the unit tests for the `main.py` file. It ensures that the code in `main.py` functions correctly.
-- `requirements.txt`: This file lists the dependencies required for your Python project. You can use this file to install the necessary packages using `pip`.
-
-## Usage
-
-To run the application, execute the following command:
-
-```
-python src/main.py
-```
-
-To run the tests, execute the following command:
-
-```
-python -m unittest discover tests
-```
+- **User Collection Viewing**: Users can enter their BoardGameGeek username to view their game collection.
+- **Responsive Design**: The collection is displayed in a grid format that adjusts to the screen size.
 
 ## Installation
 
-To install the required dependencies, run the following command:
+Before running the application, you need to install the required dependencies. Ensure you have Python and pip installed on your system, then run:
 
 ```
 pip install -r requirements.txt
+
 ```
 
-Make sure you have Python and pip installed on your system before running the above command.
 
-## Contributing
+## Running the Application
 
-Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
+To start the web application, navigate to the `src` directory and run:
+    
+```
+python main.py
+```
 
-## License
+This will start a local server. Open a web browser and go to `http://127.0.0.1:5000/` to view the application.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+## Todo
+
+- Add support for accepting user input for game type
+- Add support for accepting player count input
+- Add support for accepting game duration input
+- Add support for randomizing a game based on user inputs
